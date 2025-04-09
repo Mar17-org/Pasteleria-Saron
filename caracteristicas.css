@@ -1,0 +1,50 @@
+.group-container {
+    padding: 70px 50px;
+}
+
+.columns {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.column {
+    background-color: #f0f0f0;
+    padding: 0;
+    text-align: left;
+}
+
+.image-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+
+.image-description {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.payment-buttons {
+    margin-top: 20px;
+}
+
+.buy-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.buy-button:hover {
+    background-color: #45a049;
+}
