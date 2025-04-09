@@ -1,5 +1,5 @@
 ![inicio](https://github.com/user-attachments/assets/92195777-28dc-403d-bd12-a6435261ed77)
-![inicio](https://github.com/user-attachments/assets/5cb42c82-3450-4b57-8969-52342628271c)
+
 # Pasteleria-Saron
 # Imagen 
 ![Uploading image.png…]()
