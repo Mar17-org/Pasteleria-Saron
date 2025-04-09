@@ -1,4 +1,7 @@
 # Pasteleria-Saron
+# Imagen 
+![Uploading image.png…]()
+
 #Inicio "Menu"
 <!DOCTYPE html>
 <html lang="es">
