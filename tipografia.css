@@ -17,7 +17,7 @@
 .search-bar button {
     padding: 12px 20px;
     font-size: 1.2em;
-    background-color: #ffcc00;
+    background-color: #c41e9a;
     border: none;
     border-radius: 0 25px 25px 0;
     cursor: pointer;
@@ -216,7 +216,7 @@ footer {
 .search-bar button {
     padding: 8px 12px;
     font-size: 1em;
-    background-color: #ffcc00;
+    background-color: #d419d4;
     border: none;
     border-radius: 0 20px 20px 0;
     cursor: pointer;
