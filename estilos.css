@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(167, 42, 250);
+}
+
+h1 {
+    text-align: center;
+    color: #070401d0; /* Color tipo caramelo */
+    margin-bottom: 30px;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+iframe {
+    border: 0;
+    width: 80%;
+    height: 450px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
