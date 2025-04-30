@@ -1,14 +1,14 @@
-/* Barra de búsqueda más grande */
+/* Centrar la barra de búsqueda debajo de los botones de navegación */
 .search-bar {
     display: flex;
-    align-items: center;
-    margin-left: 20px;
+    justify-content: center;
+    margin-top: 20px;  /* Asegura que no esté pegada al menú */
 }
 
 .search-bar input {
     padding: 12px 20px;
     font-size: 1.2em;
-    width: 300px; /* Aumentamos el ancho */
+    width: 300px;
     border-radius: 25px 0 0 25px;
     border: none;
     outline: none;
@@ -23,14 +23,36 @@
     cursor: pointer;
 }
 
+/* Ajustes de espaciado en la sección info-section */
+.info-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
 
+.info-section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-section .buttons {
+    margin-bottom: 30px;
+}
+
+.footer-links {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 0.95em;
+    color: #5b2c38;
+}
 /* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 /* Fuentes */
 body {
     font-family: 'Raleway', sans-serif;
@@ -198,26 +220,52 @@ footer {
         margin-top: 10px;
     }
 }
-/* Barra de búsqueda */
+/* Centrar la barra de búsqueda debajo de los botones de navegación */
 .search-bar {
     display: flex;
-    align-items: center;
-    margin-left: 20px;
+    justify-content: center;
+    margin-top: 20px;  /* Asegura que no esté pegada al menú */
 }
 
 .search-bar input {
-    padding: 8px;
-    font-size: 1em;
-    border-radius: 20px 0 0 20px;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    width: 300px;
+    border-radius: 25px 0 0 25px;
     border: none;
     outline: none;
 }
 
 .search-bar button {
-    padding: 8px 12px;
-    font-size: 1em;
-    background-color: #d419d4;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    background-color: #c41e9a;
     border: none;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 25px 25px 0;
     cursor: pointer;
+}
+
+/* Ajustes de espaciado en la sección info-section */
+.info-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.info-section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-section .buttons {
+    margin-bottom: 30px;
+}
+
+.footer-links {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 0.95em;
+    color: #5b2c38;
 }
