@@ -1,99 +1,110 @@
 body {
-    font-family: sans-serif;
-    margin: 20px;
-    background-color: #bcedf3; /* Un tono crema suave */
-    color: #5e503f; /* Un tono marrón oscuro */
+    font-family: 'Montserrat', sans-serif; /* Using a more modern sans-serif font */
+    margin: 0; /* Removing default margin for better control */
+    background-color: #FDF7E4; /* A soft, inviting cream color */
+    color: #4A3C32; /* A rich, deep brown for primary text */
+    line-height: 1.6; /* Improved line spacing for readability */
 }
 
 header {
     text-align: center;
+    padding: 40px 20px;
     margin-bottom: 30px;
+    background-color: #EAD2AC; /* A warm, inviting header background */
+    border-bottom: 3px solid #C4A484; /* A slightly darker border for emphasis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* A more prominent shadow */
 }
 
-h1 {
-    font-size: 3em;
+header h1 {
+    font-family: 'Playfair Display', serif; /* An elegant serif font for the main title */
+    font-size: 4em; /* Larger, more impactful title */
     font-weight: bold;
-    color: #9a8c98;
+    color: #8B4513; /* A warm, rich brown for the heading */
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 4px; /* Increased letter spacing for sophistication */
     margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25); /* Stronger text shadow */
 }
 
-p {
-    font-size: 1.2em;
-    color: #b5838d; /* Un lila más vibrante */
+header p {
+    font-family: 'Lora', serif; /* A graceful serif font for the slogan */
+    font-size: 1.6em; /* Larger slogan for better visibility */
+    color: #A0522D; /* A comforting, slightly muted orange-brown */
     font-style: italic;
     margin-top: 0;
-    margin-bottom: 20px;
-    border-left: 4px solid #c9ada7;
-    padding-left: 10px;
+    margin-bottom: 0; /* Adjusted margin to fit the header better */
+    border-left: 6px solid #C4A484; /* Thicker, more prominent left border */
+    padding-left: 15px;
 }
-
 
 .catalogo {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* More flexible grid for various screen sizes */
+    gap: 35px; /* Increased gap between products */
+    padding: 25px;
+    max-width: 1280px; /* Max width for larger screens */
+    margin: 0 auto; /* Center the catalog */
 }
 
 @media (max-width: 800px) {
     .catalogo {
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjusted for tablets */
+        gap: 25px;
     }
 }
 
 @media (max-width: 500px) {
     .catalogo {
-        grid-template-columns: 1fr; /* 1 columna en móviles */
+        grid-template-columns: 1fr; /* Single column for mobile */
+        padding: 15px;
     }
 }
 
 .producto {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 15px;
+    background-color: #FFFFFF;
+    border-radius: 15px; /* More rounded corners for a softer look */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); /* Deeper, softer shadow */
+    padding: 25px;
     text-align: center;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out; /* Smoother transitions */
+    overflow: hidden; /* Ensures nothing overflows the rounded corners */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes space evenly */
 }
 
 .producto img {
     width: 100%;
-    height: 300px; /* Ajusta a la altura que prefieras */
+    height: 320px; /* Slightly increased image height */
     object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    border-radius: 10px; /* Rounded corners for images */
+    margin-bottom: 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
 }
 
 .producto h3 {
-    color: #5e503f;
+    font-family: 'Playfair Display', serif; /* Matching heading font */
+    color: #5A483F; /* A rich, earthy brown for product titles */
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 2em; /* Larger, more prominent product titles */
 }
 
 .precio {
-    color: #e29578; /* Un tono naranja terroso */
+    color: #D47B4C; /* A warm, inviting orange for prices */
     font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 1.5em; /* Larger price to stand out */
+    margin-bottom: 15px;
 }
 
 .descripcion {
-    color: #706677; /* Otro tono lila grisáceo */
-    font-size: 0.9em;
-}
-
-/* Estilos adicionales para un toque más elegante */
-header {
-    border-bottom: 2px solid #c9ada7;
-    padding-bottom: 20px;
-}
-
-.producto {
-    transition: transform 0.3s ease-in-out;
+    color: #7A6B62; /* A soft, muted grey-brown for descriptions */
+    font-size: 1.1em; /* Slightly larger description font */
+    flex-grow: 1; /* Allows description to take available space */
+    margin-bottom: 15px;
 }
 
 .producto:hover {
-    transform: scale(1.05) translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px) scale(1.04); /* More pronounced lift and zoom effect */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Much stronger shadow on hover */
 }
-
